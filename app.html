@@ -27,10 +27,19 @@
             <div>
                 電話番号
                 <input type="text">
+            </div>
         </fieldset>
         <input type="submit"value="送　信" onclick="send()">
 
         <script>
+            function ques(){
+                if(window.confirm("申し込みしますか？")){
+
+                }else{
+                    send();
+                }
+            }
+            
             function send(){
                 alert("できませんでした")
             }
